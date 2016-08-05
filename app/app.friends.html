@@ -1,0 +1,5 @@
+<div *ngFor="let f of friends;  #i=index">
+    <h3 [style.background]="f.color">{{i+1}}...Name: {{ f.name }}</h3> 
+    <h4>Age: {{ f.age }}</h4> 
+    <button (click)="toggleBackground(f)">Toggle Background</button>
+</div>
